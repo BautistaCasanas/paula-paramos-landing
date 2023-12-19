@@ -24,7 +24,10 @@ const Translation = () => {
                         />   
                     ))}
                 </div>
-                <img src={require(`../../assets/traducciones.jpg`)} alt="img-translation" className="img-translation"/>
+                {/* <div className="translation-img-container">  */}
+                    <img src={require(`../../assets/traducciones.jpg`)} alt="img-translation" className="img-translation"/>
+                    {/* <button className="btn-translation">{language === LanguageTypes.SPANISH ? "Traducí ahora" : "Translate now"}</button> */}
+                {/* </div> */}
             </div>
         </>
     );

@@ -3,8 +3,8 @@ export const reasonES = [
     {logo:"reloj.png",title:"Entregas a Tiempo",descrip:"Cumplimiento puntual de plazos pautados"},
     {logo:"profesional.png",title:"Profesionalismo",descrip:"Asumo cada proyecto conseriedad y responsabilidad"},
     {logo:"compromiso.png",title:"Compromiso",descrip:"Puedes confiar en mi dedicación constante"},
-    {logo:"flexibilidad.png",title:"Flexibilidad",descrip:"Me adapto dinámicamente para cumplir con tus expectativas"},
-    {logo:"confidencial_2.png",title:"Confidencialidad",descrip:"Absoluta privacidad con respecto al material recibido"},
+    {logo:"adaptabilidad.png",title:"Adaptabilidad",descrip:"Me adapto dinámicamente para cumplir con tus expectativas"},
+    {logo:"capacitacion.png",title:"Capacitación",descrip:"Realizo capacitaciones constantemente"},
 ];
 
 export const reasonEN = [
@@ -12,6 +12,6 @@ export const reasonEN = [
     {logo:"reloj.png",title:"On Time Delivery",descrip:"Punctual compliance with agreed deadlines"},
     {logo:"profesional.png",title:"Professionalism",descrip:"I take on each project with seriousness and responsibility"},
     {logo:"compromiso.png",title:"Commitment",descrip:"You can trust my constant dedication"},
-    {logo:"flexibilidad.png",title:"Flexibility",descrip:"I adapt dynamically to meet your expectations"},
-    {logo:"confidencial_2.png",title:"Confidentiality",descrip:"Absolute privacy regarding the material received"},
+    {logo:"adaptabilidad.png",title:"Adaptability",descrip:"I adapt dynamically to meet your expectations"},
+    {logo:"capacitacion.png",title:"Training",descrip:"I do training constantly"},
 ];
