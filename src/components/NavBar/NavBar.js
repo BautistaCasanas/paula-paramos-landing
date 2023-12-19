@@ -77,40 +77,42 @@ const NavBar = () => {
                     </div>
                     :
                     <>
-                        <nav className="nav ">
+                        <div id="nav-background">
+                            <nav className="nav">
                                 <h2 className="nav-logo">PAULA</h2>
                                 {/*isVisible && <img className="nav-logo" src={require('../../assets/logo-white.png')} alt='logo' />*/}
                                 <div className="nav-info">
-                                {language === LanguageTypes.SPANISH ?
-                                    NavBarSpanish.map(label =>
-                                        <div key={label.text} className="nav-links">
-                                            <button className="button-nav" onClick={() => handleNavigation(label.link)}>{label.text}</button>
-                                        </div>
-                                    )
-                                    :
-                                    NavBarEnglish.map(label =>
-                                        <div className="nav-links">
-                                            <button className="button-nav" onClick={() => handleNavigation(label.link)}>{label.text}</button>
-                                        </div>
-                                    )
-                                }
-                                <div className="nav-links">
-                                    {width > 768 && <ToggleLanguage responsive={'right: 8rem'} />}
+                                    {language === LanguageTypes.SPANISH ?
+                                        NavBarSpanish.map(label =>
+                                            <div key={label.text} className="nav-links">
+                                                <button className="button-nav" onClick={() => handleNavigation(label.link)}>{label.text}</button>
+                                            </div>
+                                        )
+                                        :
+                                        NavBarEnglish.map(label =>
+                                            <div className="nav-links">
+                                                <button className="button-nav" onClick={() => handleNavigation(label.link)}>{label.text}</button>
+                                            </div>
+                                        )
+                                    }
+                                    <div className="nav-links">
+                                        {width > 768 && <ToggleLanguage responsive={'right: 8rem'} />}
+                                    </div>
                                 </div>
-                            </div>
-                        </nav>
-                        <nav className="nav-responsive-line">
-                            <h2 className="nav-logo">PAULA</h2>
-                            {/*<img className="nav-logo" src={require('../../assets/logo-white.png')} alt='logo' />*/}
-                            <div className="nav-responsive-links">
-                                <div className=" toggle-responsive toggle">
-                                    <ToggleLanguage />
+                            </nav>
+                            <nav className="nav-responsive-line">
+                                <h2 className="nav-logo">PAULA</h2>
+                                {/*<img className="nav-logo" src={require('../../assets/logo-white.png')} alt='logo' />*/}
+                                <div className="nav-responsive-links">
+                                    <div className=" toggle-responsive toggle">
+                                        <ToggleLanguage />
+                                    </div>
+                                    <div className="burger-responsive" onClick={toggleBurger}>
+                                        <BurgerMenu />
+                                    </div>
                                 </div>
-                                <div className="burger-responsive" onClick={toggleBurger}>
-                                    <BurgerMenu />
-                                </div>
-                            </div>
-                        </nav>
+                            </nav>
+                        </div>
                     </>
             }
 
